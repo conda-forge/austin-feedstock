@@ -4,10 +4,11 @@ if [[ "$target_platform" == "linux-64" ]]; then
     export CFLAGS="${CFLAGS} -lrt"
 fi
 
-[[ "$target_platform" == "win-64" ]] && patch_libtool
 
 autoreconf --install
 ./configure --prefix=${PREFIX}
+
+[[ "$target_platform" == "win-64" ]] && patch_libtool
 
 make
 make install

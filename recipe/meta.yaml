@@ -1,5 +1,5 @@
 {% set name = "austin" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,11 @@ package:
 
 source:
   url: https://github.com/P403n1x87/austin/archive/v{{ version }}.tar.gz
-  sha256: f86804f777f2f466ddede5d530d3ca67582b2a1467d000662d81272d6e9c5639
+  sha256: 95d40608bac22b965712dc929143ebc994d44b2eb4782b99ba58a2deb1e38aa1
 
 build:
   number: 0
-  entry_points:
-    - austin-tui = austin.main:main
-    - austin-web = austin.web:main
-    - austin2speedscope = austin.format.speedscope:main
-  #skip: True  # [win and vc<14]
-  skip: True  # [win or linux]
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
@@ -28,17 +23,10 @@ requirements:
     - autotools_clang_conda  # [win]
   host:
     - python
-    - pip
   run:
     - python
-    - aiohttp
-    - psutil
-    - pyfiglet
 
 test:
-  imports:
-    - austin
-    - austin.html
   commands:
     - austin --help
 

@@ -9,5 +9,3 @@ autoreconf --install
 
 make
 make install
-
-${PYTHON} -m pip install . -vv

@@ -10,13 +10,12 @@ source:
   sha256: f86804f777f2f466ddede5d530d3ca67582b2a1467d000662d81272d6e9c5639
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - austin-tui = austin.main:main
     - austin-web = austin.web:main
     - austin2speedscope = austin.format.speedscope:main
-  #skip: True  # [win and vc<14]
-  skip: True  # [win or linux]
+  skip: True  # [win and vc<14]
 
 requirements:
   build:

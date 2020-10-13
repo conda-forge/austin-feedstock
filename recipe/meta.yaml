@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/P403n1x87/austin/archive/v{{ version }}.tar.gz
-  sha256: 95d40608bac22b965712dc929143ebc994d44b2eb4782b99ba58a2deb1e38aa1
+  sha256: be52b0cb7e0819694929ee525464c903600edd91630ad9c77e486fa38ab934dd
 
 build:
   number: 0

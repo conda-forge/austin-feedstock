@@ -5,3 +5,5 @@ docker_image:                             # [linux64]
 cdt_name:                                 # [linux64]
   - cos7                                  # [linux64]
   
+cudnn:                                            # [linux64]
+  - undefined                                     # [linux64]

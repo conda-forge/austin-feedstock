@@ -1,5 +1,5 @@
 {% set name = "austin" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/P403n1x87/austin/archive/v{{ version }}.tar.gz
-  sha256: be52b0cb7e0819694929ee525464c903600edd91630ad9c77e486fa38ab934dd
+  sha256: adc7ce66478142ae0e0922c8ad2031dbf908c6d9fa2c3f6e9793888bd11e67ab
 
 build:
   number: 0
@@ -35,7 +35,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.md
-  summary: 'A Frame Stack Sampler for CPython'
+  summary: A Frame Stack Sampler for CPython
 
   description: |
     Austin is a Python frame stack sampler for CPython written in pure C. Samples are collected 

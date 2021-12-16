@@ -1,5 +1,5 @@
 {% set name = "austin" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/P403n1x87/austin/archive/v{{ version }}.tar.gz
-  sha256: 1d1776350a2a083cbacbd6100e815cb5e4184bcc35517290c8f82e4e78f4ed7f
+  sha256: ee189af905fac77ff9173b57d8e927bdb7c4cf5e18b1bfd7f4456ac46fe04484
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:

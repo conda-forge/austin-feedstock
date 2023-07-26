@@ -1,11 +1,11 @@
-About austin
-============
+About austin-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/austin-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/P403n1x87/austin
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/austin-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Frame Stack Sampler for CPython
 
@@ -22,7 +22,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/austin-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/austin-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>

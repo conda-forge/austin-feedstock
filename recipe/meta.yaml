@@ -25,10 +25,10 @@ requirements:
     - make  # [not win]
     - sysroot_linux-64 2.17  # [linux64]
     - autotools_clang_conda  # [win]
-    - binutils  # [linux]
-    - libunwind  # [linux]
   host:
     - python
+    - binutils  # [linux]
+    - libunwind  # [linux]
   run:
     - python
 

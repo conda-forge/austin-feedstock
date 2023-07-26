@@ -14,5 +14,5 @@ make
 make install
 
 if [[ "$target_platform" == linux-* ]]; then
-    gcc -O3 -Wall -pthread src/*.c -DAUSTINP -lunwind-ptrace -lunwind-generic -lbfd -o $PREFIX/bin/austinp
+    $CC -O3 -Wall -pthread src/*.c -DAUSTINP -lunwind-ptrace -lunwind-generic -lbfd -o $PREFIX/bin/austinp
 fi

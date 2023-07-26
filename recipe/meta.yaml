@@ -35,7 +35,7 @@ requirements:
 test:
   commands:
     - austin --help
-    - austinp --help
+    - austinp --help  # [linux]
 
 about:
   home: https://github.com/P403n1x87/austin

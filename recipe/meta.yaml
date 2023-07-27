@@ -8,9 +8,11 @@ package:
 source:
   url: https://github.com/P403n1x87/austin/archive/v{{ version }}.tar.gz
   sha256: b9cad3670c5f6f750d2c8dc6869a7c5b45fe42305185a0cd3f249e1aa017a7ea
+  patches:
+    - 177.diff  # unnecessary after 3.5.0
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -25,12 +27,15 @@ requirements:
     - autotools_clang_conda  # [win]
   host:
     - python
+    - binutils  # [linux]
+    - libunwind  # [linux]
   run:
     - python
 
 test:
   commands:
     - austin --help
+    - austinp --help  # [linux]
 
 about:
   home: https://github.com/P403n1x87/austin
@@ -40,13 +45,14 @@ about:
   summary: A Frame Stack Sampler for CPython
 
   description: |
-    Austin is a Python frame stack sampler for CPython written in pure C. Samples are collected 
-    by reading the CPython interpreter virtual memory space in order to retrieve information about 
-    the currently running threads along with the stack of the frames that are being executed. Hence, 
-    one can use Austin to easily make powerful statistical profilers that have minimal impact on the 
+    Austin is a Python frame stack sampler for CPython written in pure C. Samples are collected
+    by reading the CPython interpreter virtual memory space in order to retrieve information about
+    the currently running threads along with the stack of the frames that are being executed. Hence,
+    one can use Austin to easily make powerful statistical profilers that have minimal impact on the
     target application and that don't require any instrumentation.
   dev_url: https://github.com/P403n1x87/austin
 
 extra:
   recipe-maintainers:
     - synapticarbors
+    - matthiasdiener

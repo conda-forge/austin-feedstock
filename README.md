@@ -1,11 +1,11 @@
-About austin
-============
+About austin-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/austin-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/P403n1x87/austin
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/austin-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Frame Stack Sampler for CPython
 
@@ -360,5 +360,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@matthiasdiener](https://github.com/matthiasdiener/)
 * [@synapticarbors](https://github.com/synapticarbors/)
 

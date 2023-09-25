@@ -12,7 +12,7 @@ source:
     - 177.diff  # unnecessary after 3.5.0
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
